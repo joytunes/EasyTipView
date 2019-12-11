@@ -389,9 +389,11 @@ open class EasyTipView: UIView {
         guard let sview = superview
             , presentingView != nil else { return }
         
-        UIView.animate(withDuration: 0.3) {
-            self.arrange(withinSuperview: sview)
-            self.setNeedsDisplay()
+        DispatchQueue.main.async {
+            UIView.animate(withDuration: 0.3) {
+                self.arrange(withinSuperview: sview)
+                self.setNeedsDisplay()
+            }
         }
     }
     
