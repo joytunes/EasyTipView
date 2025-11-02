@@ -24,8 +24,7 @@ let package = Package(
         .target(
             name: "EasyTipView",
             dependencies: [],
-            path: "Sources/EasyTipView",
-            publicHeadersPath: "."
+            path: "Sources/EasyTipView"
         ),
         .testTarget(
             name: "EasyTipViewTests",
