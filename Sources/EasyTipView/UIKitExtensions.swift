@@ -6,7 +6,7 @@
 //  Copyright © 2016 teodorpatras. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // MARK: - UIBarItem extension -
 
